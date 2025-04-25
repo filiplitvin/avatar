@@ -1,0 +1,99 @@
+:root {
+  --fontTextPrimary: "Inter", sans-serif;
+  --fontTextOther: "Headland One", serif;
+  --fontTextInfo: "Hammersmith One", sans-serif;
+  --colorTextPrimary: #ffffff;
+  --colorTextQuotes: #000000;
+  --colorTextCard: #141414;
+  --colorTextName: #000000;
+  --colorTextCardBg: #ffffff;
+  --colorTextLink: #26c7ea;
+  --colorTextBgLink: #0b0e66;
+  --colorTextFirstQuote: #0a3853;
+  --colorTextBlure: #2b4a61;
+  --colorTextFirstLink: #26c6ea;
+  --colorTextNavigation: #94cfff;
+}
+body {
+  font-family: var(--fontTextPrimary);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2em;
+  /* ------------------------------------- */
+  background-color: var(--colorTextBlure);
+  /* ------------------------------------- */
+}
+.container {
+  max-width: 1062px;
+  max-height: 3638px;
+}
+.nav-link {
+  color: var(--colorTextPrimary);
+  font-weight: 200;
+}
+.nav-link:hover {
+  color: var(--colorTextLink);
+  font-weight: 600;
+}
+.nav-link-enter {
+  color: var(--colorTextFirstLink);
+  font-family: var(--fontTextInfo);
+  font-weight: 400;
+}
+.nav-link-language {
+  color: var(--colorTextPrimary);
+}
+.hero-text {
+  color: var(--colorTextPrimary);
+}
+.hero-link-button {
+  color: var(--colorTextFirstLink);
+  font-size: 24px;
+  font-family: var(--fontTextInfo);
+}
+.quotes-title {
+  font-size: 36px;
+  line-height: 1.22em;
+  font-weight: 400;
+  color: var(--colorTextCard), var(--colorTextQuotes);
+}
+.first-quote {
+  color: var(--colorTextFirstQuote);
+}
+.quotes-text {
+  font-size: 24px;
+  line-height: 1.21em;
+  color: var(--colorTextQuotes);
+}
+.trailer-link {
+  font-size: 24px;
+  line-height: 1.25em;
+  font-family: var(--fontTextInfo);
+  color: var(--colorTextLink);
+}
+.language-navi-title {
+  font-size: 32px;
+  line-height: 1.25em;
+  font-weight: 400;
+  font-family: var(--fontTextInfo);
+}
+.language-navi-text {
+  font-size: 24px;
+  font-family: var(--fontTextInfo);
+  line-height: inherit;
+  font-weight: 400;
+  color: var(--colorTextQuotes);
+}
+.language-navi-text2 {
+  font-size: 24px;
+  font-family: var(--fontTextInfo);
+  line-height: inherit;
+  font-weight: 400;
+  color: var(--colorTextCard), var(--colorTextQuotes);
+}
+.footer-text {
+  color: var(--colorTextPrimary);
+}
+.footer-policy {
+  color: var(--colorTextPrimary);
+}
