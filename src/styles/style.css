@@ -27,6 +27,23 @@ body {
   max-width: 1062px;
   max-height: 3638px;
 }
+.header {
+  max-height: 150px;
+}
+.header-container {
+  display: flex;
+  justify-content: center;
+  gap: 168px;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  gap: 38px;
+}
+/* .nav-item {
+  display: flex;
+  gap: 212px;
+} */
 .nav-link {
   color: var(--colorTextPrimary);
   font-weight: 200;
