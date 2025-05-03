@@ -25,6 +25,8 @@ body {
 }
 .container {
   max-width: 1062px;
+  margin: 0 auto;
+  padding: 0px 15px;
 }
 .header {
   background-color: #94cfff;
@@ -32,19 +34,16 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* ------------ */
-  height: 150px;
-  min-width: 1470px;
-  /* padding */
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
 }
 .header-container {
   display: flex;
   justify-content: center;
   gap: 168px;
   align-items: center;
-}
-.logo {
-  margin-left: 204px;
 }
 .nav-list {
   display: flex;
@@ -83,10 +82,6 @@ body {
 }
 .hero-swiper:checked::before {
   left: 19px;
-}
-.nav-item {
-  padding-top: 63px;
-  padding-bottom: 63px;
 }
 .nav-link {
   color: var(--colorTextPrimary);
@@ -141,14 +136,15 @@ body {
   font-size: 24px;
   font-family: var(--fontTextInfo);
   background-color: var(--colorTextBgLink);
-  padding-left: 38px;
-  padding-right: 38px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-top: 9px;
   padding-bottom: 7.69px;
   border: 2px solid var(--colorTextLink);
   border-radius: 45px 0px 45px 0px;
-  width: 260px;
-  margin-left: 219px;
+  max-width: 260px;
+  display: inline-block;
+  text-align: center;
 }
 .quotes {
   background-color: var(--colorTextPrimary);
@@ -160,6 +156,7 @@ body {
 .quotes-item {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
 }
 .quotes-title {
   font-size: 36px;
@@ -184,7 +181,7 @@ body {
 .quotes-text {
   font-size: 24px;
   line-height: 1.21em;
-  color: var(--colorTextQuotes);
+  color: var(--colorTextFirstQuote);
   padding-bottom: 8px;
 }
 .trailer {
@@ -230,8 +227,27 @@ body {
   align-items: center;
   /* max-width: 1032px; */
 }
+.language-navi-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 36px;
+  justify-content: center;
+}
+.language-navi-item {
+  flex-basis: calc((100% - 60px) / 4);
+}
+.language-navi-title-card {
+  display: flex;
+  justify-content: center;
+}
 .language-navi-card {
   background-color: var(--colorTextCardBg);
+  background-image: url(../images/rectangle-left.webp),
+    url(../images/rectangle-right.webp), url(../images/emojey.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 152px 40px;
   opacity: 1;
   width: 320px;
   height: 240px;
