@@ -330,14 +330,14 @@ body {
 .footer-content {
   border-left: solid 2px var(--colorTextPrimary);
   margin-left: 467px;
-  /* padding-top: 112px;
-  padding-bottom: 111px; */
+  padding-bottom: 111px;
   height: 223px;
 }
 /* .logo {
 } */
 .footer-logo {
   padding-left: 204px;
+  display: block;
 }
 .footer-item {
   display: flex;
