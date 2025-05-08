@@ -30,7 +30,8 @@ body {
 }
 .header {
   background-color: #94cfff;
-  background-image: url(../images/bg-header-and-footer.webp);
+  background-image: linear-gradient(to right, rgba(43, 74, 97, 0.87)),
+    url(../images/bg-header-and-footer.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,6 +45,7 @@ body {
   justify-content: center;
   gap: 168px;
   align-items: center;
+  position: relative;
 }
 .nav-list {
   display: flex;
@@ -53,33 +55,7 @@ body {
   display: flex;
   gap: 212px;
 } */
-.hero {
-  background-image: url(../images/hero-Bg.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 740px;
-}
-.hero-swiper {
-  appearance: none;
-  width: 36px;
-  height: 20px;
-  border: 1px solid var(--colorTextPrimary);
-  border-radius: 10px;
-  position: relative;
-  cursor: pointer;
-}
-.hero-swiper::before {
-  content: "";
-  width: 12px;
-  height: 12px;
-  position: absolute;
-  background-color: var(--colorTextPrimary);
-  border-radius: 50%;
-  top: 3.5px;
-  left: 3px;
-  transition: left 0.35s ease-in;
-}
+
 .hero-swiper:checked::before {
   left: 19px;
 }
@@ -102,6 +78,8 @@ body {
   padding-bottom: 7.69px;
   border: 2px solid var(--colorTextLink);
   border-radius: 45px 0px 45px 0px;
+  display: flex;
+  align-items: center;
 }
 .nav-link-language {
   color: var(--colorTextPrimary);
@@ -112,6 +90,48 @@ body {
   padding-left: 174px;
   padding-right: 11px;
   /* padding-top: 54px; */
+}
+.language-list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: absolute;
+  left: calc(100% + 50px);
+  top: 50%;
+  transform: translatey(-50%);
+}
+.hero {
+  background-image: url(../images/hero-Bg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-swiper {
+  appearance: none;
+  width: 36px;
+  height: 20px;
+  border: 1px solid var(--colorTextPrimary);
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.hero-swiper::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  background-color: var(--colorTextPrimary);
+  border-radius: 50%;
+  top: 3.5px;
+  left: 3px;
+  transition: left 0.35s ease-in;
 }
 .hero-item-apps {
   display: flex;
@@ -124,8 +144,7 @@ body {
 }
 .hero-text {
   color: var(--colorTextPrimary);
-  padding-top: 180px;
-  max-width: 298px;
+  max-width: 266px;
   background-image: url(../images/Rectangle-left-white.webp);
   background-repeat: no-repeat;
   background-position: bottom, center;
@@ -134,7 +153,8 @@ body {
 }
 .sub-hero-text {
   color: var(--colorTextPrimary);
-  max-width: 376px;
+  max-width: 353px;
+  padding-bottom: 42px;
 }
 .hero-link-button {
   color: var(--colorTextFirstLink);
@@ -150,6 +170,13 @@ body {
   max-width: 260px;
   display: inline-block;
   text-align: center;
+}
+.hero-link-button-eng {
+  padding-left: 74px;
+  padding-right: 75px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  /* font-family: var(--fontTextOther); */
 }
 .quotes {
   background-color: var(--colorTextPrimary);
@@ -224,6 +251,7 @@ body {
   border: 2px solid var(--colorTextLink);
   border-radius: 45px 0px 45px 0px;
   width: 260px;
+  text-align: center;
 }
 .language-navi {
   background-image: url(../images/language-bg.webp);
@@ -291,24 +319,42 @@ body {
   padding-top: 120px;
 }
 .footer {
-  background-image: url(../images/bg-header-and-footer.webp);
+  background-image: linear-gradient(to right, rgba(43, 74, 97, 0.87)),
+    url(../images/bg-header-and-footer.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
+  padding-bottom: 35px;
+  padding-top: 35px;
+}
+.footer-content {
+  border-left: solid 2px var(--colorTextPrimary);
+  margin-left: 467px;
+  /* padding-top: 112px;
+  padding-bottom: 111px; */
+  height: 223px;
+}
+/* .logo {
+} */
+.footer-logo {
+  padding-left: 204px;
 }
 .footer-item {
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: row;
 }
 .footer-text {
   color: var(--colorTextPrimary);
   padding-bottom: 16px;
+  padding-left: 80px;
 }
 .footer-text2 {
   color: var(--colorTextPrimary);
   padding-bottom: 37px;
+  padding-left: 80px;
 }
 .footer-policy {
   color: var(--colorTextPrimary);
+  padding-left: 211px;
 }
