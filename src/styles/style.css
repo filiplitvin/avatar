@@ -201,6 +201,11 @@ body {
   text-align: center;
   min-width: 1100px;
 }
+.first-quotes-ua {
+  color: var(--colorTextFirstQuote);
+  text-align: center;
+  min-width: 724px;
+}
 .first-quotes-subtitle {
   color: var(--colorTextFirstQuote);
 }
