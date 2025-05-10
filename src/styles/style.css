@@ -19,14 +19,12 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.2em;
-  /* ------------------------------------- */
   background-color: var(--colorTextBlure);
-  /* ------------------------------------- */
 }
 .container {
   max-width: 1062px;
   margin: 0 auto;
-  /* padding: 0px 15px; */
+  padding: 0px 15px;
 }
 .header {
   background-color: #94cfff;
@@ -39,6 +37,9 @@ body {
   padding-bottom: 40px;
   display: flex;
   align-items: center;
+  border-bottom: solid 3px var(--colorTextPrimary);
+  text-align: center;
+  box-shadow: 0px 4px 4px 0px #00000025;
 }
 .header-container {
   display: flex;
@@ -47,15 +48,12 @@ body {
   align-items: center;
   position: relative;
 }
+
 .nav-list {
   display: flex;
   gap: 38px;
+  align-items: center;
 }
-/* .nav-item {
-  display: flex;
-  gap: 212px;
-} */
-
 .hero-swiper:checked::before {
   left: 19px;
 }
@@ -89,7 +87,6 @@ body {
   display: flex;
   padding-left: 174px;
   padding-right: 11px;
-  /* padding-top: 54px; */
 }
 .language-list {
   display: flex;
@@ -101,7 +98,7 @@ body {
   transform: translatey(-50%);
 }
 .hero {
-  background-image: url(../images/hero-Bg.webp);
+  background-image: url(../images/hero-bg.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -145,7 +142,7 @@ body {
 .hero-text {
   color: var(--colorTextPrimary);
   max-width: 266px;
-  background-image: url(../images/Rectangle-left-white.webp);
+  background-image: url(../images/rectangle-left-white.webp);
   background-repeat: no-repeat;
   background-position: bottom, center;
   background-size: 152px 40px;
@@ -176,7 +173,6 @@ body {
   padding-right: 75px;
   padding-top: 25px;
   padding-bottom: 25px;
-  /* font-family: var(--fontTextOther); */
 }
 .quotes {
   background-color: var(--colorTextPrimary);
@@ -184,8 +180,8 @@ body {
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 400px 120px;
-  padding-top: 150px;
-  padding-bottom: 200px;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 .quotes-item {
   display: flex;
@@ -197,11 +193,13 @@ body {
   line-height: 1.22em;
   font-weight: 400;
   color: var(--colorTextCard), var(--colorTextQuotes);
-  /* padding-top: 75px; */
   padding-bottom: 4px;
+  display: flex;
 }
 .first-quotes {
   color: var(--colorTextFirstQuote);
+  text-align: center;
+  min-width: 1100px;
 }
 .first-quotes-subtitle {
   color: var(--colorTextFirstQuote);
@@ -258,37 +256,35 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-bottom: 57px;
 }
 .language-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* max-width: 1032px; */
 }
 .language-navi-list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   gap: 36px;
   justify-content: center;
 }
 .language-navi-item {
-  flex-basis: calc((100% - 60px) / 4);
+  flex-basis: calc((100% - 72px) / 3);
 }
 .language-navi-title-card {
   display: flex;
   justify-content: center;
 }
 .language-navi-card {
-  background-color: var(--colorTextCardBg);
+  background-color: rgb(255, 255, 255, 25);
   background-image: url(../images/rectangle-left.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 152px 40px;
   opacity: 0.7;
-  width: 320px;
-  height: 240px;
-  margin-bottom: 57px;
+  cursor: pointer;
+  padding-bottom: 36px;
 }
 .language-navi-title {
   font-size: 32px;
@@ -327,17 +323,18 @@ body {
   padding-bottom: 35px;
   padding-top: 35px;
 }
+.footer-container {
+  display: flex;
+  align-items: center;
+}
 .footer-content {
   border-left: solid 2px var(--colorTextPrimary);
-  margin-left: 467px;
   padding-bottom: 111px;
   height: 223px;
 }
-/* .logo {
-} */
 .footer-logo {
-  padding-left: 204px;
   display: block;
+  padding-right: 80px;
 }
 .footer-item {
   display: flex;
@@ -348,13 +345,17 @@ body {
   color: var(--colorTextPrimary);
   padding-bottom: 16px;
   padding-left: 80px;
+  font-size: 20px;
+  padding-top: 80px;
 }
 .footer-text2 {
   color: var(--colorTextPrimary);
   padding-bottom: 37px;
   padding-left: 80px;
+  font-size: 20px;
 }
 .footer-policy {
   color: var(--colorTextPrimary);
   padding-left: 211px;
+  font-size: 14px;
 }
