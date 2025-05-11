@@ -178,7 +178,7 @@ body {
   background-color: var(--colorTextPrimary);
   background-image: url(../images/emojey.webp);
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: bottom 8px center;
   background-size: 400px 120px;
   padding-top: 130px;
   padding-bottom: 130px;
@@ -284,6 +284,26 @@ body {
 .language-navi-card {
   background-color: rgb(255, 255, 255, 25);
   background-image: url(../images/rectangle-left.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 152px 40px;
+  opacity: 0.7;
+  cursor: pointer;
+  padding-bottom: 36px;
+}
+.language-navi-card-emojey {
+  background-color: rgb(255, 255, 255, 25);
+  background-image: url(../images/emojey.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 152px 40px;
+  opacity: 0.7;
+  cursor: pointer;
+  padding-bottom: 36px;
+}
+.language-navi-card-arrow-right {
+  background-color: rgb(255, 255, 255, 25);
+  background-image: url(../images/rectangle-right.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 152px 40px;
