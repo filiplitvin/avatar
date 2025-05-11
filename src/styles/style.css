@@ -98,7 +98,7 @@ body {
   transform: translatey(-50%);
 }
 .hero {
-  background-image: url(../images/hero-bg.webp);
+  background-image: url(../images/bg-hero.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -142,7 +142,7 @@ body {
 .hero-text {
   color: var(--colorTextPrimary);
   max-width: 266px;
-  background-image: url(../images/rectangle-left-white.webp);
+  background-image: url(../images/arrow-white.webp);
   background-repeat: no-repeat;
   background-position: bottom, center;
   background-size: 152px 40px;
