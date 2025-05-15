@@ -78,6 +78,7 @@ body {
   border-radius: 45px 0px 45px 0px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .nav-link-language {
   color: var(--colorTextPrimary);
@@ -167,12 +168,20 @@ body {
   max-width: 260px;
   display: inline-block;
   text-align: center;
+  cursor: pointer;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+}
+.hero-link-button:hover {
+  transform: translate(5px, -5px);
 }
 .hero-link-button-eng {
   padding-left: 74px;
   padding-right: 75px;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+.hero-photo {
+  cursor: pointer;
 }
 .quotes {
   background-color: var(--colorTextPrimary);
@@ -255,9 +264,23 @@ body {
   border-radius: 45px 0px 45px 0px;
   width: 260px;
   text-align: center;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.trailer-link:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 7px 0 -2px #1a7bae, 0 15px 0 -4px #0c3f6c,
+    0 16px 10px -3px #39a2db;
+}
+.trailer-link:active {
+  transition: all 0.2s;
+  transform: translateY(-5px);
+  box-shadow: 0 2px 0 -2px #1a7bae, 0 8px 0 -4px #0c3f6c,
+    0 12px 10px -3px #39a2db;
 }
 .language-navi {
-  background-image: url(../images/language-bg.webp);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.25)),
+    url(../images/language-bg.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -273,6 +296,7 @@ body {
   flex-wrap: wrap;
   gap: 36px;
   justify-content: center;
+  row-gap: 24px;
 }
 .language-navi-item {
   flex-basis: calc((100% - 72px) / 3);
@@ -282,12 +306,11 @@ body {
   justify-content: center;
 }
 .language-navi-card {
-  background-color: rgb(255, 255, 255, 25);
+  background-color: rgb(255, 255, 255, 0.7);
   background-image: url(../images/rectangle-left.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 152px 40px;
-  opacity: 0.7;
   cursor: pointer;
   padding-bottom: 36px;
 }
@@ -372,6 +395,9 @@ body {
   padding-left: 80px;
   font-size: 20px;
   padding-top: 80px;
+}
+.footer-link:hover {
+  border-bottom: white solid 2px;
 }
 .footer-text2 {
   color: var(--colorTextPrimary);
