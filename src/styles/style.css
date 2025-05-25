@@ -79,10 +79,32 @@ body {
   display: flex;
   align-items: center;
   cursor: pointer;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px var(--colorTextFirstLink);
+}
+.nav-link-enter:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px var(--colorTextBgLink);
 }
 .nav-link-language {
   color: var(--colorTextPrimary);
   margin-right: 10px;
+  position: relative;
+}
+.nav-link-language::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -0.25rem;
+  right: 0;
+  transition: right 0.4s, width 0.4s, left 0.4s;
+}
+.nav-link-language:hover::before {
+  width: 100%;
+  left: 0;
 }
 .nav-item-enter {
   display: flex;
@@ -182,6 +204,30 @@ body {
 }
 .hero-photo {
   cursor: pointer;
+  width: 30px;
+  height: 30px;
+  fill: var(--colorTextPrimary);
+}
+.hero-photo:hover {
+  fill: aqua;
+}
+.hero-photo-twitter {
+  cursor: pointer;
+  width: 34px;
+  height: 30px;
+  fill: var(--colorTextPrimary);
+}
+.hero-photo-twitter:hover {
+  fill: lightskyblue;
+}
+.hero-photo-youtube {
+  cursor: pointer;
+  width: 50px;
+  height: 30px;
+  fill: var(--colorTextPrimary);
+}
+.hero-photo-youtube:hover {
+  fill: red;
 }
 .quotes {
   background-color: var(--colorTextPrimary);
@@ -313,6 +359,9 @@ body {
   background-size: 152px 40px;
   cursor: pointer;
   padding-bottom: 36px;
+}
+.language-navi-card:hover {
+  box-shadow: 0px 0px 2px 1px black;
 }
 .language-navi-card-emojey {
   background-color: rgb(255, 255, 255, 25);
