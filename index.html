@@ -151,15 +151,30 @@
       </section>
       <section class="trailer">
         <div class="container">
-          <ul class="trailer-list">
-            <li class="trailer-item">
-              <a
-                href="https://www.youtube.com/watch?v=E8Qe0vS_I3I"
-                class="trailer-link"
-                >Дивитись трейлер</a
-              >
-            </li>
-          </ul>
+          <div class="trailer-box">
+            <button class="trailer-link" data-modal-open>
+              Дивитись трейлер
+            </button>
+          </div>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="btn-close" data-modal-close>Закрити</button>
+              <iframe
+                class="modal-content"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/E8Qe0vS_I3I?si=C7R4kB8wfSg_KrDd"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <button class="modal-button">
+                <p class="modal-text">Thanks for watching</p>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="quotes">
@@ -272,5 +287,6 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="./src/js/index.js"></script>
   </body>
 </html>
