@@ -27,6 +27,9 @@ body {
   padding: 0px 15px;
 }
 .header {
+  position: fixed;
+  width: 100%;
+  min-height: 150px;
   background-color: #94cfff;
   background-image: linear-gradient(to right, rgba(43, 74, 97, 0.87)),
     url(../images/bg-header-and-footer.webp);
@@ -119,6 +122,9 @@ body {
   left: calc(100% + 50px);
   top: 50%;
   transform: translatey(-50%);
+}
+.main {
+  padding-top: 150px;
 }
 .hero {
   background-image: url(../images/bg-hero.webp);
