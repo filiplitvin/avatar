@@ -14,6 +14,9 @@
   --colorTextFirstLink: #26c6ea;
   --colorTextNavigation: #94cfff;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--fontTextPrimary);
   font-weight: 400;
@@ -63,6 +66,9 @@ body {
 .nav-link {
   color: var(--colorTextPrimary);
   font-weight: 200;
+  transition-property: color, font-weight;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.15, 0.58, 0.71, 0.25);
 }
 .nav-link:hover {
   color: var(--colorTextLink);
@@ -224,7 +230,7 @@ body {
   fill: var(--colorTextPrimary);
 }
 .hero-photo-twitter:hover {
-  fill: lightskyblue;
+  fill: aqua;
 }
 .hero-photo-youtube {
   cursor: pointer;
@@ -233,7 +239,7 @@ body {
   fill: var(--colorTextPrimary);
 }
 .hero-photo-youtube:hover {
-  fill: red;
+  fill: aqua;
 }
 .quotes {
   background-color: var(--colorTextPrimary);
@@ -318,6 +324,7 @@ body {
   text-align: center;
   cursor: pointer;
   transition: all 0.4s;
+  transition-duration: 0.25s;
 }
 .backdrop {
   position: fixed;
@@ -428,9 +435,12 @@ body {
   background-size: 152px 40px;
   cursor: pointer;
   padding-bottom: 36px;
+  transition-property: box-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.09, 0.79, 0.9, 0.08);
 }
 .language-navi-card:hover {
-  box-shadow: 0px 0px 2px 1px black;
+  box-shadow: 0px 1px 3px 1px black;
 }
 .language-navi-card-emojey {
   background-color: rgb(255, 255, 255, 25);
